@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RPG Creature Search</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>RPG Creature Search</h1>
+
+    <label for="search-input" class="sr-only">Search by name or ID</label>
+    <div class="search-row">
+      <input id="search-input" type="text" placeholder="Name or ID" required />
+      <button id="search-button" type="button">Search</button>
+    </div>
+
+    <section id="result-container" class="result">
+      <h2 id="creature-name"></h2>
+      <p id="creature-id"></p>
+
+      <p id="weight"></p>
+      <p id="height"></p>
+
+      <div id="sprite-container"></div>
+
+      <div id="types"></div>
+
+      <div class="stats">
+        <div>HP: <span id="hp"></span></div>
+        <div>Attack: <span id="attack"></span></div>
+        <div>Defense: <span id="defense"></span></div>
+        <div>Sp. Atk: <span id="special-attack"></span></div>
+        <div>Sp. Def: <span id="special-defense"></span></div>
+        <div>Speed: <span id="speed"></span></div>
+      </div>
+    </section>
+
+    <p class="hint">Try: <b>Pyrolynx</b> or <b>2</b>. Invalid example: <b>Red</b>.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
