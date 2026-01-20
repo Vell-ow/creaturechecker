@@ -1,0 +1,65 @@
+:root{
+  --bg:#0f1724;
+  --panel:#10243b;
+  --accent:#ff6f3c;
+  --muted:#cbd5e1;
+  --type:#f0a54b;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background:linear-gradient(180deg,var(--bg),#071226);
+  color:var(--muted);
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:28px;
+}
+
+.container{
+  width:360px;
+  background:var(--panel);
+  border-radius:12px;
+  padding:18px;
+  box-shadow:0 10px 30px rgba(2,6,23,0.7);
+}
+
+h1{ margin:0 0 12px 0; color:#fff; text-align:center; font-size:20px; }
+
+.search-row{ display:flex; gap:8px; margin-bottom:12px; }
+
+#search-input{
+  flex:1; padding:10px 12px; border-radius:8px; border:none; outline:none;
+  background:#ffffff10; color:var(--muted);
+}
+
+#search-button{
+  padding:10px 12px; border-radius:8px; border:none; background:var(--accent); color:#fff; cursor:pointer;
+}
+
+.result{ text-align:center; margin-top:8px; }
+
+#creature-name{ margin:6px 0 0 0; color:#fff; font-size:18px; }
+#creature-id{ margin:4px 0 8px 0; color:#dbeafe; }
+
+#weight,#height{ margin:2px 0; color:var(--muted); }
+
+#sprite-container img{ max-width:140px; display:block; margin:10px auto; }
+
+#types{ margin:10px 0; min-height:28px; }
+
+.type-box{
+  display:inline-block; padding:6px 10px; margin:3px; border-radius:8px; background:var(--type); color:#2b1a00; font-weight:700; font-size:12px; text-transform:uppercase;
+}
+
+.stats{
+  margin-top:10px; display:grid; grid-template-columns:1fr 1fr; gap:8px; text-align:left; color:var(--muted); padding:6px;
+}
+
+.hint{ margin-top:12px; font-size:13px; text-align:center; color:#aeb8c8; }
+
+/* screen-reader only */
+.sr-only{ position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden; }
